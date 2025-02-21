@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>薛文 - 学术简历</title>
-    <style>
+    <title>Wen Xue - Academic CV</title>
+<style>
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #34495e;
@@ -35,9 +35,16 @@
             letter-spacing: -0.5px;
         }
 
+        .chinese-name {
+            font-size: 1.2rem; /* 较小字体 */
+            color: var(--secondary-color);
+            margin-top: 0.2rem; /* 与标题的间距 */
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; /* 确保中文显示正常 */
+        }
+
         .contact-info {
             text-align: center;
-            margin: 1.5rem 0;
+            margin: 0.5rem 0;
             font-size: 0.95rem;
             color: var(--secondary-color);
         }
@@ -57,7 +64,7 @@
         h2 {
             font-size: 1.4rem;
             color: var(--accent-color);
-            margin: 0 0 1.5rem 0;
+            margin: 0 0 1rem 0;
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #ecf0f1;
         }
@@ -98,162 +105,226 @@
             .section {
                 padding: 1rem;
             }
+            
+            .chinese-name {
+                font-size: 0.7rem; /* 移动设备上更小的字体 */
+            }
         }
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+            
+            .chinese-name {
+                font-size: 1rem;
+            }
+        }
+      	.education-item {
+              margin-bottom: 0.8rem;
+              display: flex;
+              flex-direction: column; /* 确保内容按列排列 */
+          }
+
+          .degree {
+              font-weight: 600; /* 加粗学位信息 */
+              color: var(--primary-color);
+          }
+
+          .institution {
+              color: var(--secondary-color);
+              margin-bottom: 0.2rem; /* 机构与时间之间的间距 */
+          }
+
+          .duration {
+              font-size: 0.9rem; /* 较小字体 */
+              color: #7f8c8d; /* 灰色，与会议名称颜色一致 */
+              margin-bottom: 0.2rem; /* 时间与监督者信息之间的间距 */
+          }
+
+          .supervisor {
+              font-size: 0.9rem;
+              color: var(--secondary-color);
+              font-style: italic; /* 斜体，突出监督者信息 */
+          }
+
+          @media (max-width: 768px) {
+              .duration, .supervisor {
+                  font-size: 0.85rem; /* 移动设备上稍小的字体 */
+              }
+          }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>薛文</h1>
+        <h1>Wen Xue</h1>
+        <div class="chinese-name">薛文</div>
         <div class="contact-info">
             <p>csxuewen@mail.scut.edu.cn</p>
-            <p>广东省广州市番禺区外环东路382号</p>
+            <p>South China University of Technology</p>
         </div>
     </header>
 
     <section class="section">
-        <h2>研究领域</h2>
+        <h2>Research Interests</h2>
         <ul>
-            <li>基于大模型的计算机视觉与图像处理</li>
-            <li>计算基因组学与生物信息学</li>
-            <li>生成式人工智能及其应用</li>
-    </ul>
-</div>
+            <li>Computer Vision and Image Processing Based on Large-Scale Models</li>
+            <li>Computational Genomics and Bioinformatics</li>
+            <li>Generative Artificial Intelligence and Its Applications</li>
         </ul>
     </section>
+    
+
+  <section class="section">
+      <h2>Education</h2>
+      <ul>
+          <li class="education-item">
+              <span class="degree">Ph.D. Candidate, Computer Science and Technology</span>
+              <span class="institution">South China University of Technology</span>
+              <span class="duration">2023 – present</span>
+              <span class="supervisor">(Supervisor: Prof. Yong Xu)</span>
+          </li>
+          <li class="education-item">
+              <span class="degree">Bachelor’s Degree, Computer Science and Technology</span>
+              <span class="institution">South China University of Technology</span>
+              <span class="duration">2019-2023</span>
+          </li>
+      </ul>
+  </section>
 
     <section class="section">
-        <h2>教育背景</h2>
-        <ul>
-            <li>博士研究生，计算机科学与技术，华南理工大学，2023至今（导师：许勇 教授）</li>
-            <li>学士，计算机科学与技术（全英创新班），华南理工大学，2019-2023</li>
-        </ul>
+        <h2>Publications</h2>
+
+        <div class="publication">
+            <div class="paper-info">
+                <strong class="author-highlight">Xue, W.</strong>, Ding, C., Xu, R., Wu, S., & Wong, H. S. (2025). "RetouchGPT: LLM-based Interactive High-Fidelity Face Retouching via Imperfection Prompting".
+            </div>
+            <div class="conference-links">
+                <span class="conference"><strong>AAAI 2025</strong></span> <span class="publication-links">[<a href="https://github.com/Davidcoach/RetouchGPT" class="code-link">code</a>] [<a href="https://openreview.net/forum?id=OI1ogMLD0F" class="paper-link">paper</a>]</span>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="paper-info">
+                Xie, L., Zheng, B., <strong class="author-highlight">Xue, W.</strong>, Zhang, Y., Jiang, L., Xu, R., Wu, S., & Wong, H. S. (2025). "Discrete Prior-based Temporal-coherent Content Prediction for Blind Face Video Restoration".
+            </div>
+            <div class="conference-links">
+                <span class="conference"><strong>AAAI 2025</strong></span> <span class="publication-links">[<a href="https://github.com/lxxie298/DP-TempCoh" class="code-link">code</a>] [<a href="https://arxiv.org/pdf/2501.09960" class="paper-link">paper</a>]</span>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="paper-info">
+                Lin, L., <strong class="author-highlight">Xue, W.</strong> (Joint First Author), Wei, X., Shen, W., Liu, C., Wu, S., & Wong, H. S. (2024). "SCTrans: Multi-scale scRNA-seq Sub-vector Completion Transformer for Gene-selective Cell Type Annotation".
+            </div>
+            <div class="conference-links">
+                <span class="conference"><strong>IJCAI 2024</strong></span> <span class="publication-links">[<a href="https://www.ijcai.org/proceedings/2024/658" class="paper-link">paper</a>]</span>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="paper-info">
+                <strong class="author-highlight">Xue, W.</strong>, Xie, L., Jiang, L., Chen, T., Wu, S., Liu, C., & Wong, H. S. (2024). "RetouchFormer: Semisupervised High-Quality Face Retouching Transformer with Prior-Based Selective Self-Attention".
+            </div>
+            <div class="conference-links">
+                <span class="conference"><strong>AAAI 2024</strong></span> <span class="publication-links">[<a href="https://ojs.aaai.org/index.php/AAAI/article/view/28404" class="paper-link">paper</a>]</span>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="paper-info">
+                <strong class="author-highlight">Xue, W.</strong>, Jiang, L., Xie, L., Wu, S., Xu, Y., & Wong, H. S. (2024). "VRetouchEr: Learning Cross-frame Feature Interdependence with Imperfection Flow for Face Retouching in Videos".
+            </div>
+            <div class="conference-links">
+                <span class="conference"><strong>CVPR 2024</strong></span> <span class="publication-links">[<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Xue_VRetouchEr_Learning_Cross-frame_Feature_Interdependence_with_Imperfection_Flow_for_Face_CVPR_2024_paper.html" class="paper-link">paper</a>]</span>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="paper-info">
+                Xie, L., Zheng, B., <strong class="author-highlight">Xue, W.</strong>, Jiang, L., Liu, C., Wu, S., & Wong, H. S. (2024). "Learning Degradation-unaware Representation with Prior-based Latent Transformations for Blind Face Restoration".
+            </div>
+            <div class="conference-links">
+                <span class="conference"><strong>CVPR 2024</strong></span> <span class="publication-links">[<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Xie_Learning_Degradation-unaware_Representation_with_Prior-based_Latent_Transformations_for_Blind_Face_CVPR_2024_paper.html" class="paper-link">paper</a>]</span>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="paper-info">
+                Jiang, L., Huang, Y., Xie, L., <strong class="author-highlight">Xue, W.</strong>, Liu, C., Wu, S., & Wong, H. S. (2024). "Hunting Blemishes: Language-guided High-fidelity Face Retouching Transformer with Limited Paired Data".
+            </div>
+            <div class="conference-links">
+                <span class="conference"><strong>ACMMM 2024</strong></span> <span class="publication-links">[<a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681576" class="paper-link">paper</a>]</span>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="paper-info">
+                Xie, L., <strong class="author-highlight">Xue, W.</strong>, Xu, Z., Wu, S., Yu, Z., & Wong, H. S. (2023). "Blemish-aware and Progressive Face Retouching with Limited Paired Data".
+            </div>
+            <div class="conference-links">
+                <span class="conference"><strong>CVPR 2023</strong></span> <span class="publication-links">[<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Xie_Blemish-Aware_and_Progressive_Face_Retouching_With_Limited_Paired_Data_CVPR_2023_paper.html" class="paper-link">paper</a>]</span>
+            </div>
+        </div>
     </section>
 
-<section class="section">
-    <h2>学术成果</h2>
+    <style>
+    .publication {
+        margin-bottom: 1.8rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+    }
 
-    <div class="publication">
-        <div class="paper-info">
-            <strong class="author-highlight">Xue, W.</strong>, Ding, C., Xu, R., Wu, S., & Wong, H. S. (2025). "RetouchGPT: LLM-based Interactive High-Fidelity Face Retouching via Imperfection Prompting".
-        </div>
-        <div class="conference-links">
-            <span class="conference"><strong>AAAI 2025</strong></span> <span class="publication-links">[<a href="https://github.com/Davidcoach/RetouchGPT" class="code-link">code</a>] [<a href="https://openreview.net/forum?id=OI1ogMLD0F" class="paper-link">paper</a>]</span>
-        </div>
-    </div>
+    .paper-info {
+        margin-bottom: 0.3rem; /* Adjust spacing between paper info and conference name */
+    }
 
-	<div class="publication">
-        <div class="paper-info">
-            Xie, L., Zheng, B., <strong class="author-highlight">Xue, W.</strong>, Zhang, Y., Jiang, L., Xu, R., Wu, S., & Wong, H. S. (2025). "Discrete Prior-based Temporal-coherent Content Prediction for Blind Face Video Restoration".
-        </div>
-        <div class="conference-links">
-            <span class="conference"><strong>AAAI 2025</strong></span> <span class="publication-links">[<a href="https://github.com/lxxie298/DP-TempCoh" class="code-link">code</a>] [<a href="https://arxiv.org/pdf/2501.09960" class="paper-link">paper</a>]</span>
-        </div>
-    </div>
+    .conference-links {
+        display: block; /* Ensure conference and links occupy one line */
+    }
 
-    <div class="publication">
-        <div class="paper-info">
-            Lin, L., <strong class="author-highlight">Xue, W.</strong> (Joint First Author), Wei, X., Shen, W., Liu, C., Wu, S., & Wong, H. S. (2024). "SCTrans: Multi-scale scRNA-seq Sub-vector Completion Transformer for Gene-selective Cell Type Annotation".
-        </div>
-        <div class="conference-links">
-            <span class="conference"><strong>IJCAI 2024</strong></span> <span class="publication-links">[<a href="https://www.ijcai.org/proceedings/2024/658" class="paper-link">paper</a>]</span>
-        </div>
-    </div>
+    .publication-links {
+        font-size: 0.9em;
+        display: inline;
+    }
 
-    <div class="publication">
-        <div class="paper-info">
-            <strong class="author-highlight">Xue, W.</strong>, Xie, L., Jiang, L., Chen, T., Wu, S., Liu, C., & Wong, H. S. (2024). "RetouchFormer: Semisupervised High-Quality Face Retouching Transformer with Prior-Based Selective Self-Attention".
-        </div>
-        <div class="conference-links">
-            <span class="conference"><strong>AAAI 2024</strong></span> <span class="publication-links">[<a href="https://ojs.aaai.org/index.php/AAAI/article/view/28404" class="paper-link">paper</a>]</span>
-        </div>
-    </div>
+    .code-link {
+        color: #2980b9;
+        text-decoration: none;
+    }
 
-    <div class="publication">
-        <div class="paper-info">
-            <strong class="author-highlight">Xue, W.</strong>, Jiang, L., Xie, L., Wu, S., Xu, Y., & Wong, H. S. (2024). "VRetouchEr: Learning Cross-frame Feature Interdependence with Imperfection Flow for Face Retouching in Videos".
-        </div>
-        <div class="conference-links">
-            <span class="conference"><strong>CVPR 2024</strong></span> <span class="publication-links">[<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Xue_VRetouchEr_Learning_Cross-frame_Feature_Interdependence_with_Imperfection_Flow_for_Face_CVPR_2024_paper.html" class="paper-link">paper</a>]</span>
-        </div>
-    </div>
+    .paper-link {
+        color: #27ae60;
+        text-decoration: none;
+    }
 
-    <div class="publication">
-        <div class="paper-info">
-            Xie, L., Zheng, B., <strong class="author-highlight">Xue, W.</strong>, Jiang, L., Liu, C., Wu, S., & Wong, H. S. (2024). "Learning Degradation-unaware Representation with Prior-based Latent Transformations for Blind Face Restoration".
-        </div>
-        <div class="conference-links">
-            <span class="conference"><strong>CVPR 2024</strong></span> <span class="publication-links">[<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Xie_Learning_Degradation-unaware_Representation_with_Prior-based_Latent_Transformations_for_Blind_Face_CVPR_2024_paper.html" class="paper-link">paper</a>]</span>
-        </div>
-    </div>
+    .code-link:hover, .paper-link:hover {
+        text-decoration: underline;
+    }
 
-    <div class="publication">
-        <div class="paper-info">
-            Jiang, L., Huang, Y., Xie, L., <strong class="author-highlight">Xue, W.</strong>, Liu, C., Wu, S., & Wong, H. S. (2024). "Hunting Blemishes: Language-guided High-fidelity Face Retouching Transformer with Limited Paired Data".
-        </div>
-        <div class="conference-links">
-            <span class="conference"><strong>ACMMM 2024</strong></span> <span class="publication-links">[<a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681576" class="paper-link">paper</a>]</span>
-        </div>
-    </div>
-
-    <div class="publication">
-        <div class="paper-info">
-            Xie, L., <strong class="author-highlight">Xue, W.</strong>, Xu, Z., Wu, S., Yu, Z., & Wong, H. S. (2023). "Blemish-aware and Progressive Face Retouching with Limited Paired Data".
-        </div>
-        <div class="conference-links">
-            <span class="conference"><strong>CVPR 2023</strong></span> <span class="publication-links">[<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Xie_Blemish-Aware_and_Progressive_Face_Retouching_With_Limited_Paired_Data_CVPR_2023_paper.html" class="paper-link">paper</a>]</span>
-        </div>
-    </div>
-</section>
-
-<style>
-.publication {
-    margin-bottom: 1.8rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
-}
-
-.paper-info {
-    margin-bottom: 0.3rem; /* 调整论文信息与会议名称之间的间距 */
-}
-
-.conference-links {
-    display: block; /* 确保会议和链接整体占一行 */
-}
-
-.publication-links {
-    font-size: 0.9em;
-    display: inline;
-}
-
-.code-link {
-    color: #2980b9;
-    text-decoration: none;
-}
-
-.paper-link {
-    color: #27ae60;
-    text-decoration: none;
-}
-
-.code-link:hover, .paper-link:hover {
-    text-decoration: underline;
-}
-
-.conference {
-    display: inline; /* 会议名称与链接同行 */
-    color: #7f8c8d;
-    margin-right: 0.5rem; /* 会议名称与链接之间的间距 */
-}
-</style>
+    .conference {
+        display: inline; /* Conference name and links on the same line */
+        color: #7f8c8d;
+        margin-right: 0.5rem; /* Spacing between conference name and links */
+    }
+    </style>
 
     <section class="section">
-        <h2>导师简介</h2>
-        <p><strong>许勇 教授</strong></p>
+        <h2>Advisor Profile</h2>
+        <p><strong>Prof. Yong Xu</strong></p>
         <ul>
-            <li>华南理工大学副校长</li>
-            <li>南京大学数学学士、硕士、博士（1993-1999）</li>
-            <li>CCF广州分会主席，IEEE/ACM高级会员</li>
-            <li>广东省大数据分析与处理工程技术研究中心主任</li>
+            <li>Vice President, South China University of Technology</li>
+            <li>Bachelor’s, Master’s, and Ph.D. in Mathematics, Nanjing University (1993-1999)</li>
+            <li>Chairman of CCF Guangzhou Branch, Senior Member of IEEE/ACM</li>
+            <li>Director of Guangdong Provincial Engineering Technology Research Center for Big Data Analysis and Processing</li>
+          	<li>Leader of the team Computer Vision and Audition and Services Computing in SCUT</li>
         </ul>
     </section>
 </body>
