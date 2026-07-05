@@ -31,7 +31,7 @@ const publications = [
             { label: "Code", url: "https://github.com/jd-opensource/Oxygen-TryOn" },
             { label: "Model", url: "https://huggingface.co/jd-opensource/Oxygen-TryOn" }
         ],
-        badge: "core contributor",
+        badge: "Core contributor",
         description: "",
         descriptionZh: "",
         selected: true,
