@@ -44,7 +44,7 @@ const publications = [
         title: "ToPMod: Task-oriented Parsing for Adaptive Cross-Frame Modulation in High-Fidelity Face Video Retouching",
         authors: "<strong>Wen Xue</strong>, Juncheng Zhang, et al.",
         venue: "IEEE Transactions on Multimedia",
-        shortVenue: "IEEE TMM",
+        shortVenue: "IEEE TMM Under Review",
         highlighted: false,
         year: 2026,
         links: [],
