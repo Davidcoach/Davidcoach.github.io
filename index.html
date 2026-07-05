@@ -1,354 +1,199 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wen Xue - Academic CV</title>
-<style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #2980b9;
-        }
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Wen Xue | 薛文</title>
+    <meta name="author" content="Wen Xue">
+    <meta name="description" content="Academic homepage of Wen Xue, Ph.D. candidate at South China University of Technology.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Wen Xue | 薛文">
+    <meta property="og:description" content="Academic homepage of Wen Xue.">
+    <meta property="og:image" content="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <script src="publications.js"></script>
+    <script src="main.js"></script>
+</head>
 
-        body {
-            font-family: 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-            line-height: 1.6;
-            color: var(--primary-color);
-            background: #f8f9fa;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 1.5rem;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            margin: 0;
-            color: var(--primary-color);
-            letter-spacing: -0.5px;
-        }
-
-        .chinese-name {
-            font-size: 1.2rem; 
-            color: var(--secondary-color);
-            margin-top: 0.2rem; 
-            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; 
-        }
-
-        .contact-info {
-            text-align: center;
-            margin: 0.5rem 0;
-            font-size: 0.95rem;
-            color: var(--secondary-color);
-        }
-
-        .contact-info p {
-            margin: 0.5rem 0;
-        }
-
-        .section {
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            color: var(--accent-color);
-            margin: 0 0 1rem 0;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #ecf0f1;
-        }
-
-        ul, ol {
-            padding-left: 1.5rem;
-            margin: 0.8rem 0;
-        }
-
-        li {
-            margin-bottom: 0.8rem;
-        }
-
-        .publication {
-            margin-bottom: 1.2rem;
-            font-size: 0.95rem;
-        }
-
-        .author-highlight {
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-
-        .conference {
-            font-style: italic;
-            color: var(--secondary-color);
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .section {
-                padding: 1rem;
-            }
-            
-            .chinese-name {
-                font-size: 0.7rem; 
-            }
-        }
-        @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            .section {
-                padding: 1rem;
-            }
-            
-            .chinese-name {
-                font-size: 1rem;
-            }
-        }
-      	.education-item {
-              margin-bottom: 0.8rem;
-              display: flex;
-              flex-direction: column; 
-          }
-
-          .degree {
-              font-weight: 600; 
-              color: var(--primary-color);
-          }
-
-          .institution {
-              color: var(--secondary-color);
-              margin-bottom: 0.2rem; 
-          }
-
-          .duration {
-              font-size: 0.9rem; 
-              color: #7f8c8d;
-              margin-bottom: 0.2rem;
-          }
-
-          .supervisor {
-              font-size: 0.9rem;
-              color: var(--secondary-color);
-              font-style: italic;
-          }
-
-          @media (max-width: 768px) {
-              .duration, .supervisor {
-                  font-size: 0.85rem;
-              }
-          }
-    </style>
-  </head>
-  <body>
-    <header>
-        <h1>Wen Xue</h1>
-        <div class="chinese-name">薛文</div>
-        <div class="contact-info">
-            <p>csxuewen@mail.scut.edu.cn</p>
-            <p>South China University of Technology</p>
-        </div>
-    </header>
-
-    <section class="section">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Computer Vision and Image Processing Based on Large-Scale Models</li>
-            <li>Computational Genomics and Bioinformatics</li>
-            <li>Generative Artificial Intelligence and Its Applications</li>
-        </ul>
-    </section>
-    
-
-  <section class="section">
-      <h2>Education</h2>
-      <ul>
-          <li class="education-item">
-              <span class="degree">Ph.D. Candidate, Computer Science and Technology</span>
-              <span class="institution">South China University of Technology</span>
-              <span class="duration">2023 – present</span>
-              <span class="supervisor">(Supervisor: Prof. Yong Xu)</span>
-          </li>
-          <li class="education-item">
-              <span class="degree">Bachelor’s Degree, Computer Science and Technology</span>
-              <span class="institution">South China University of Technology</span>
-              <span class="duration">2019 - 2023</span>
-          </li>
-      </ul>
-  </section>
-
-    <section class="section">
-        <h2>Publications</h2>
-      
-        <div class="publication">
-            <div class="pub-title">RetouchGPT: LLM-based Interactive High-Fidelity Face Retouching via Imperfection Prompting.</div>
-            <div class="pub-authors"><strong class="author-highlight">Xue, W.</strong>, Ding, C., Xu, R., Wu, S., Wong, H. S. (2025)</div>
-            <div class="conference-links">
-                <span class="conference"><strong>AAAI 2025</strong></span>
-                <span class="publication-links">
-                    [<a href="https://github.com/Davidcoach/RetouchGPT" class="code-link">code</a>]
-                    [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/32980" class="paper-link">paper</a>]
-                </span>
+<body>
+    <nav class="masthead">
+        <div class="masthead-inner">
+            <div class="language-switch" aria-label="Language switch">
+                <button type="button" data-lang-toggle="en">EN</button>
+                <button type="button" data-lang-toggle="zh">中文</button>
+            </div>
+            <a class="site-title" href="#home">Wen Xue</a>
+            <div class="nav-links">
+                <a href="#home"><span class="lang-en">Home</span><span class="lang-zh">主页</span></a>
+                <a href="#internships"><span class="lang-en">Internships</span><span class="lang-zh">实习</span></a>
+                <a href="#news"><span class="lang-en">News</span><span class="lang-zh">动态</span></a>
+                <a href="#publications-anchor"><span class="lang-en">Publications</span><span class="lang-zh">成果</span></a>
+                <a href="#education"><span class="lang-en">Education</span><span class="lang-zh">教育</span></a>
+                <a href="#honors"><span class="lang-en">Highlights</span><span class="lang-zh">亮点</span></a>
+                <a href="#service"><span class="lang-en">Service</span><span class="lang-zh">服务</span></a>
+                <a href="#contact"><span class="lang-en">Contact</span><span class="lang-zh">联系</span></a>
             </div>
         </div>
+    </nav>
 
-        <div class="publication">
-          <div class="pub-title">Discrete Prior-based Temporal-coherent Content Prediction for Blind Face Video Restoration.</div>
-          <div class="pub-authors">Xie, L., Zheng, B., <strong class="author-highlight">Xue, W.</strong>, Zhang, Y., Jiang, L., Xu, R., Wu, S., Wong, H. S. (2025)</div>
-          <div class="conference-links">
-              <span class="conference"><strong>AAAI 2025</strong></span>
-              <span class="publication-links">[<a href="https://github.com/lxxie298/DP-TempCoh" class="code-link">code</a>] [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/32944" class="paper-link">paper</a>]</span>
-          </div>
-      </div>
+    <main class="site-layout" id="home">
+        <aside class="author-sidebar">
+            <img class="author-avatar" src="images/xuewen.jpg" alt="Wen Xue">
+            <h1>Wen Xue <span>薛文</span></h1>
+            <p class="author-bio lang-en">
+                Ph.D. candidate at South China University of Technology. Researching AIGC image/video generation, controllable editing, face retouching, and virtual try-on.
+            </p>
+            <p class="author-bio lang-zh">
+                    华南理工大学计算机科学与技术博士研究生，本科毕业于计算机科学与技术本博创新班，研究方向包括图像生成、图像编辑、视频编辑与多模态生成模型。
+            </p>
+            <div class="author-links">
+                <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=OXAPkaEAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="mailto:csxuewen@mail.scut.edu.cn">Email</a>
+                <a href="https://github.com/Davidcoach" target="_blank" rel="noopener">GitHub</a>
+                <a href="./薛文CV.pdf" download>薛文CV</a>
+            </div>
+        </aside>
 
-      <div class="publication">
-          <div class="pub-title">InpaintFormer: Prompt-guided High-Quality Face Inpainting with Mask-Aware Self-Attention.</div>
-          <div class="pub-authors">Ouyang, Z., <strong class="author-highlight">Xue, W. (Joint First Author)</strong>, Chen, T., Huang, Y., Wu, S., Xu, Y., P. Le Callet, Wu D. P. (2025)</div>
-          <div class="conference-links">
-              <span class="conference"><strong>ICME 2025 (oral)</strong></span>
-          </div>
-      </div>
+        <section class="page-content">
+            <section class="archive-section intro-section">
+                <h2><span class="lang-en">About Me</span><span class="lang-zh">关于我</span></h2>
+                <p class="lang-en">
+                    I am a Ph.D. candidate in Computer Science and Technology at the
+                    <a href="https://www.scut.edu.cn/en/" target="_blank" rel="noopener">South China University of Technology</a>,
+                    advised by <a href="https://www2.scut.edu.cn/cs/2017/0629/c22284a328105/page.psp" target="_blank" rel="noopener">Prof. Yong Xu</a>. I received my B.E. degree from the same university in 2023.
+                </p>
+                <p class="lang-zh">
+                    华南理工大学计算机科学与技术博士研究生，导师为<a href="https://www2.scut.edu.cn/cs/2017/0629/c22284a328105/page.psp" target="_blank" rel="noopener">许勇教授</a>。本科毕业于华南理工大学计算机科学与技术本博创新班。
+                </p>
+                <p class="lang-en">
+                    My research focuses on <strong>AIGC image/video generation, controllable editing, high-fidelity face retouching, virtual try-on, and multimodal generative systems</strong>. I am particularly interested in using language and multimodal large models as precise control interfaces for visual generation while preserving identity, texture, temporal consistency, and user intent.
+                </p>
+                <p class="lang-zh">
+                    我的研究聚焦于 <strong>AIGC 图像/视频生成、可控编辑、高保真人脸修饰、虚拟试衣与多模态生成系统</strong>。我尤其关注如何用语言与多模态大模型作为视觉生成的精确控制接口，同时保持身份、纹理、时序一致性与用户意图。
+                </p>
+                <ul class="profile-facts">
+                    <li><span class="lang-en">Current role: TGT Intern at JD Retail, working on AIGC image/video generation systems.</span><span class="lang-zh">当前身份：京东零售 TGT 实习生，从事 AIGC 图像/视频生成系统相关工作。</span></li>
+                    <li><span class="lang-en">Research topics: image generation, image editing, video editing, and multimodal generative models.</span><span class="lang-zh">研究方向：图像生成、图像编辑（精修、去噪）、视频编辑、多模态生成模型。</span></li>
+                </ul>
+            </section>
 
-      <div class="publication">
-          <div class="pub-title">SCTrans: Multi-scale scRNA-seq Sub-vector Completion Transformer for Gene-selective Cell Type Annotation.</div>
-          <div class="pub-authors">Lin, L., <strong class="author-highlight">Xue, W. (Joint First Author)</strong>, Wei, X., Shen, W., Liu, C., Wu, S., Wong, H. S. (2024)</div>
-          <div class="conference-links">
-              <span class="conference"><strong>IJCAI 2024 (oral)</strong></span>
-              <span class="publication-links">[<a href="https://www.ijcai.org/proceedings/2024/658" class="paper-link">paper</a>]</span>
-          </div>
-      </div>
+            <section class="archive-section" id="internships">
+                <h2><span class="lang-en">Internships</span><span class="lang-zh">实习经历</span></h2>
+                <ul class="cv-list">
+                    <li class="cv-item text-only">
+                        <div class="cv-body">
+                            <div class="cv-row">
+                                <span class="cv-institution"><span class="lang-en">JD Retail AIGC Team</span><span class="lang-zh">京东零售 AIGC 团队</span></span>
+                                <span class="cv-date">Apr 2026 - Present</span>
+                            </div>
+                            <div class="cv-role"><span class="lang-en">TGT Internship, AIGC Image and Video Generation</span><span class="lang-zh">TGT 人才计划实习，AIGC 图像与视频生成方向</span></div>
+                            <div class="cv-detail"><span class="lang-en">Contributing to virtual try-on, layered image editing, streaming try-on video generation, data construction, fine-tuning, inference optimization, and evaluation.</span><span class="lang-zh">参与虚拟试衣、分层图像编辑、流式试衣视频生成、数据构建、模型微调、推理优化与评测。</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
-      <div class="publication">
-          <div class="pub-title">RetouchFormer: Semisupervised High-Quality Face Retouching Transformer with Prior-Based Selective Self-Attention.</div>
-          <div class="pub-authors"><strong class="author-highlight">Xue, W.</strong>, Xie, L., Jiang, L., Chen, T., Wu, S., Liu, C., Wong, H. S. (2024)</div>
-          <div class="conference-links">
-              <span class="conference"><strong>AAAI 2024</strong></span>
-              <span class="publication-links">[<a href="https://github.com/Davidcoach/RetouchFormer_AAAI_2024" class="code-link">code</a>] [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/28404" class="paper-link">paper</a>]</span>
-          </div>
-      </div>
+            <section class="archive-section" id="news">
+                <h2><span class="lang-en">News</span><span class="lang-zh">动态</span></h2>
+                <ul>
+                    <li><strong>2026.04</strong>: <span class="lang-en">Joined JD Retail as a TGT intern, working on AIGC image/video generation, virtual try-on, layered image editing, and streaming try-on video generation.</span><span class="lang-zh">加入京东零售 TGT 人才计划，参与 AIGC 图像/视频生成、虚拟试衣、分层图像编辑与流式试衣视频生成。</span></li>
+                    <li><strong>2026</strong>: <span class="lang-en"><em>LLM-Inpainter</em> is accepted by <i>IEEE Transactions on Multimedia</i>.</span><span class="lang-zh"><em>LLM-Inpainter</em> 被 <i>IEEE Transactions on Multimedia</i> 接收。</span></li>
+                    <li><strong>2025</strong>: <span class="lang-en"><em>RetouchGPT</em> is accepted by <i>AAAI 2025</i>; <em>InpaintFormer</em> is accepted by <i>ICME 2025</i> as an <strong>oral paper</strong>.</span><span class="lang-zh"><em>RetouchGPT</em> 被 <i>AAAI 2025</i> 接收；<em>InpaintFormer</em> 被 <i>ICME 2025</i> 接收为<strong>口头报告</strong>。</span></li>
+                    <li><strong>2024</strong>: <span class="lang-en"><em>VRetouchEr</em> is accepted by <i>CVPR 2024</i>; <em>RetouchFormer</em> is accepted by <i>AAAI 2024</i>; <em>SCTrans</em> is accepted by <i>IJCAI 2024</i> as an <strong>oral paper</strong>.</span><span class="lang-zh"><em>VRetouchEr</em> 被 <i>CVPR 2024</i> 接收；<em>RetouchFormer</em> 被 <i>AAAI 2024</i> 接收；<em>SCTrans</em> 被 <i>IJCAI 2024</i> 接收为<strong>口头报告</strong>。</span></li>
+                </ul>
+            </section>
 
-      <div class="publication">
-          <div class="pub-title">VRetouchEr: Learning Cross-frame Feature Interdependence with Imperfection Flow for Face Retouching in Videos.</div>
-          <div class="pub-authors"><strong class="author-highlight">Xue, W.</strong>, Jiang, L., Xie, L., Wu, S., Xu, Y., Wong, H. S. (2024)</div>
-          <div class="conference-links">
-              <span class="conference"><strong>CVPR 2024</strong></span>
-              <span class="publication-links">[<a href="https://github.com/Davidcoach/VRetouchER_CVPR_2024" class="code-link">code</a>] [<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Xue_VRetouchEr_Learning_Cross-frame_Feature_Interdependence_with_Imperfection_Flow_for_Face_CVPR_2024_paper.html" class="paper-link">paper</a>]</span>
-          </div>
-      </div>
+            <section class="archive-section" id="publications-anchor">
+                <h2>
+                    <span class="lang-en">Publications and Projects</span><span class="lang-zh">论文与项目</span>
+                    [<a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=OXAPkaEAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a>]
+                </h2>
+                <div class="pub-switch-row">
+                    <strong><span class="lang-en">Filter</span><span class="lang-zh">筛选</span>:</strong>
+                    <a href="#" id="show-selected" class="pub-switch active"><span class="lang-en">Selected</span><span class="lang-zh">精选</span></a> /
+                    <a href="#" id="show-date" class="pub-switch"><span class="lang-en">By date</span><span class="lang-zh">按年份</span></a> /
+                    <a href="#" id="show-topic" class="pub-switch"><span class="lang-en">By topic</span><span class="lang-zh">按方向</span></a>
+                </div>
+                <div id="pub-years" class="pub-filter-line"></div>
+                <div id="pub-topics" class="pub-filter-line"></div>
+                <p class="note">
+                    <span class="lang-en">* Equal contribution.</span>
+                    <span class="lang-zh">* 表示共同贡献。</span>
+                </p>
+                <div id="publications-list"></div>
+            </section>
 
-      <div class="publication">
-          <div class="pub-title">Learning Degradation-unaware Representation with Prior-based Latent Transformations for Blind Face Restoration.</div>
-          <div class="pub-authors">Xie, L., Zheng, B., <strong class="author-highlight">Xue, W.</strong>, Jiang, L., Liu, C., Wu, S., Wong, H. S. (2024)</div>
-          <div class="conference-links">
-              <span class="conference"><strong>CVPR 2024</strong></span>
-              <span class="publication-links">[<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Xie_Learning_Degradation-unaware_Representation_with_Prior-based_Latent_Transformations_for_Blind_Face_CVPR_2024_paper.html" class="paper-link">paper</a>]</span>
-          </div>
-      </div>
+            <section class="archive-section" id="education">
+                <h2><span class="lang-en">Education</span><span class="lang-zh">教育经历</span></h2>
+                <ul class="cv-list">
+                    <li class="cv-item">
+                        <div class="cv-logo">
+                            <img src="images/logos/scut.png" alt="South China University of Technology">
+                        </div>
+                        <div class="cv-body">
+                            <div class="cv-row">
+                                <span class="cv-institution"><span class="lang-en">South China University of Technology</span><span class="lang-zh">华南理工大学</span></span>
+                                <span class="cv-date">Sep 2023 - Jun 2027</span>
+                            </div>
+                            <div class="cv-role"><span class="lang-en">Ph.D. Candidate in Computer Science and Technology</span><span class="lang-zh">计算机科学与技术博士研究生</span></div>
+                            <div class="cv-detail"><span class="lang-en">School of Computer Science and Engineering. Advisor: <a href="https://www2.scut.edu.cn/cs/2017/0629/c22284a328105/page.psp" target="_blank" rel="noopener">Prof. Yong Xu</a>.</span><span class="lang-zh">计算机科学与工程学院，导师：<a href="https://www2.scut.edu.cn/cs/2017/0629/c22284a328105/page.psp" target="_blank" rel="noopener">许勇教授</a>。</span></div>
+                        </div>
+                    </li>
+                    <li class="cv-item">
+                        <div class="cv-logo">
+                            <img src="images/logos/scut.png" alt="South China University of Technology">
+                        </div>
+                        <div class="cv-body">
+                            <div class="cv-row">
+                                <span class="cv-institution"><span class="lang-en">South China University of Technology</span><span class="lang-zh">华南理工大学</span></span>
+                                <span class="cv-date">Sep 2019 - Jun 2023</span>
+                            </div>
+                            <div class="cv-role"><span class="lang-en">B.E. in Computer Science and Technology</span><span class="lang-zh">计算机科学与技术工学学士（本博创新班）</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
-      <div class="publication">
-          <div class="pub-title">Hunting Blemishes: Language-guided High-fidelity Face Retouching Transformer with Limited Paired Data.</div>
-          <div class="pub-authors">Jiang, L., Huang, Y., Xie, L., <strong class="author-highlight">Xue, W.</strong>, Liu, C., Wu, S., Wong, H. S. (2024)</div>
-          <div class="conference-links">
-              <span class="conference"><strong>ACMMM 2024</strong></span>
-              <span class="publication-links">[<a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681576" class="paper-link">paper</a>]</span>
-          </div>
-      </div>
+            <section class="archive-section" id="honors">
+                <h2><span class="lang-en">Highlights</span><span class="lang-zh">亮点</span></h2>
+                <ul class="highlight-list">
+                    <li class="logo-highlight">
+                        <img src="images/logos/jd.png" alt="JD Retail">
+                        <span><span class="lang-en">Selected for the JD Retail TGT Talent Program.</span><span class="lang-zh">入选京东零售 TGT 人才计划。</span></span>
+                    </li>
+                    <li><span class="lang-en">2022: University First-class Scholarship during undergraduate study.</span><span class="lang-zh">2022：本科期间获得校级一等奖学金。</span></li>
+                    <li><span class="lang-en">2021: University First-class Scholarship during undergraduate study.</span><span class="lang-zh">2021：本科期间获得校级一等奖学金。</span></li>
+                    <li><span class="lang-en">2020: University First-class Scholarship during undergraduate study.</span><span class="lang-zh">2020：本科期间获得校级一等奖学金。</span></li>
+                </ul>
+            </section>
 
-      <div class="publication">
-          <div class="pub-title">Blemish-aware and Progressive Face Retouching with Limited Paired Data.</div>
-          <div class="pub-authors">Xie, L., <strong class="author-highlight">Xue, W.</strong>, Xu, Z., Wu, S., Yu, Z., Wong, H. S. (2023)</div>
-          <div class="conference-links">
-              <span class="conference"><strong>CVPR 2023</strong></span>
-              <span class="publication-links">[<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Xie_Blemish-Aware_and_Progressive_Face_Retouching_With_Limited_Paired_Data_CVPR_2023_paper.html" class="paper-link">paper</a>]</span>
-          </div>
-      </div>
+            <section class="archive-section" id="contact">
+                <h2><span class="lang-en">Contact</span><span class="lang-zh">联系</span></h2>
+                <ul>
+                    <li>Email: csxuewen [AT] mail [DOT] scut [DOT] edu [DOT] cn</li>
+                    <li>GitHub: <a href="https://github.com/Davidcoach" target="_blank" rel="noopener">github.com/Davidcoach</a></li>
+                    <li>Google Scholar: <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=OXAPkaEAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">Wen Xue</a></li>
+                </ul>
+            </section>
 
-    </section>
+            <section class="archive-section" id="service">
+                <h2><span class="lang-en">Academic Service</span><span class="lang-zh">学术服务</span></h2>
+                <h3><span class="lang-en">Conference and Journal Reviewing</span><span class="lang-zh">会议与期刊审稿</span></h3>
+                <ul class="service-list">
+                    <li><span class="lang-en">IEEE Transactions on Multimedia (TMM)</span><span class="lang-zh">IEEE Transactions on Multimedia (TMM)</span></li>
+                    <li>CVPR</li>
+                    <li>AAAI</li>
+                    <li>ECCV</li>
+                    <li>ICLR</li>
+                </ul>
+            </section>
 
-    <style>
-    .publication {
-        margin-bottom: 1.8rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #eee;
-    }
-    .pub-title {
-        font-size: 1.0rem;
-        font-weight: 500;
-        color: var(--primary-color);
-        margin-bottom: 0.2rem;
-    }
-
-    .pub-authors {
-        color: var(--secondary-color);
-        font-size: 0.95rem;
-        margin-bottom: 0.2rem;
-    }
-    .paper-info {
-        margin-bottom: 0.3rem; /* Adjust spacing between paper info and conference name */
-    }
-
-    .conference-links {
-        display: block; /* Ensure conference and links occupy one line */
-    }
-
-    .publication-links {
-        font-size: 0.9em;
-        display: inline;
-    }
-
-    .code-link {
-        color: #2980b9;
-        text-decoration: none;
-    }
-
-    .paper-link {
-        color: #27ae60;
-        text-decoration: none;
-    }
-
-    .code-link:hover, .paper-link:hover {
-        text-decoration: underline;
-    }
-
-    .conference {
-        display: inline; /* Conference name and links on the same line */
-        color: #7f8c8d;
-        margin-right: 0.5rem; /* Spacing between conference name and links */
-    }
-    </style>
-
-    <section class="section">
-        <h2>Advisor Profile</h2>
-        <p><strong>Prof. Yong Xu</strong></p>
-        <ul>
-            <li>Vice President, South China University of Technology</li>
-            <li>Bachelor’s, Master’s, and Ph.D. in Mathematics, Nanjing University (1993-1999)</li>
-            <li>Chairman of CCF Guangzhou Branch, Senior Member of IEEE/ACM</li>
-            <li>Director of Guangdong Provincial Engineering Technology Research Center for Big Data Analysis and Processing</li>
-          	<li>Leader of the team Computer Vision and Audition and Services Computing in SCUT</li>
-        </ul>
-    </section>
+            <footer class="site-footer">
+                &copy; Wen Xue | Last updated: Jul 4, 2026
+            </footer>
+        </section>
+    </main>
 </body>
+
 </html>
