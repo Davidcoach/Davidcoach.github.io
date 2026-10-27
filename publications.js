@@ -1,5 +1,29 @@
 const publications = [
     {
+        image: "images/flows/layereditor.png",
+        title: "Editing Images into Reusable Layers via Compositional Edit-Prior Distillation",
+        authors: "<strong>Wen Xue</strong>, Yong Liu, Xueheng Li, Si Wu, Yong Xu, Yipeng Sun, Yan Li, Simiu Gu",
+        venue: "ICLR 2027 (under review)",
+        shortVenue: "ICLR 2027 <strong>Under Review</strong>",
+        shortVenueZh: "ICLR 2027 <strong>在投</strong>",
+        highlighted: true,
+        year: 2026,
+        links: [
+            { label: "ArXiv", url: "https://arxiv.org/abs/2610.24738" },
+            { label: "PDF", url: "https://arxiv.org/pdf/2610.24738" },
+            { label: "HF Paper", url: "https://huggingface.co/papers/2610.24738" },
+            { label: "HF Daily Top 3", url: "https://huggingface.co/papers/date/2026-10-23" }
+        ],
+        badge: "First author · HF Daily Papers Top 3 (Oct 23, 2026)",
+        badgeZh: "第一作者 · HF Daily Papers 日榜 Top 3（2026.10.23）",
+        description: "Introduces LayerEditor, which jointly generates an edited canvas and reusable RGBA layers with control over layer count and user-specified layer content. RGB–Alpha token modeling and compositional edit-prior distillation (C-EPD) preserve editing fidelity, supported by LayerEditor-100K and dedicated layered-editing benchmarks.",
+        descriptionZh: "提出 LayerEditor，联合生成编辑结果与可复用 RGBA 图层，支持可变图层数量和指定图层内容的可控分层。通过 RGB–Alpha 联合建模与组合式编辑先验蒸馏（C-EPD）保持编辑保真度，并构建 LayerEditor-100K 数据与分层编辑评测。",
+        selected: true,
+        primaryTopic: "Image Editing",
+        contribution: "lead",
+        topics: ["Image Generation", "Image Editing", "Multimodal Generative Models"]
+    },
+    {
         image: "images/flows/nichedesig.png",
         title: "NicheDeSig: Niche-aware Deconvolution and Adaptive Signature Analysis for Spatial Transcriptomics",
         authors: "<strong>Wen Xue</strong>, Juncheng Zhang, Tianyi Chen, Wenjun Shen, Jinjin Ma, Yong Xu, Hau-San Wong, Si Wu",
@@ -8,7 +32,7 @@ const publications = [
         highlighted: true,
         year: 2026,
         links: [
-            { label: "Paper", url: "papers/NicheDeSig_Bioinformatics_2026.pdf" },
+            { label: "Paper", url: "https://doi.org/10.1093/bioinformatics/btag578" },
             { label: "Code", url: "https://github.com/Davidcoach/NicheDeSig" }
         ],
         badge: "First author · CCF-A · SCI Q1",
@@ -28,7 +52,7 @@ const publications = [
         highlighted: true,
         year: 2026,
         links: [
-            { label: "Paper", url: "papers/DiffBPM_Neurocomputing_2026.pdf" },
+            { label: "Paper", url: "https://doi.org/10.1016/j.neucom.2026.134713" },
             { label: "DOI", url: "https://doi.org/10.1016/j.neucom.2026.134713" }
         ],
         badge: "Co-first author · SCI Q1",
@@ -67,9 +91,10 @@ const publications = [
         highlighted: true,
         year: 2026,
         links: [
-            { label: "Project", url: "https://jd-opensource.github.io/Oxygen-TryOn" },
-            { label: "Code", url: "https://github.com/jd-opensource/Oxygen-TryOn" },
-            { label: "Model", url: "https://huggingface.co/jd-opensource/Oxygen-TryOn" }
+            { label: "Project", url: "https://oxygenvision.github.io/Oxygen-TryOn/" },
+            { label: "ArXiv", url: "https://arxiv.org/abs/2607.21694" },
+            { label: "Demo", url: "https://oxygen-tryon.jd.com/" },
+            { label: "Code", url: "https://github.com/OxygenVision/Oxygen-TryOn" }
         ],
         badge: "core contributor",
         description: "",

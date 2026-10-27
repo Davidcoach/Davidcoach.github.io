@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const topicLabels = {
         "Image Generation": "图像生成",
-        "Image Editing": "图像编辑（精修、去噪）",
+        "Image Editing": "图像编辑",
         "Video Editing": "视频编辑",
         "Multimodal Generative Models": "多模态生成模型",
         "Computational Biology": "计算生物学"
@@ -154,6 +154,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function renderPub(pub) {
+        const shortVenue = currentLang === 'zh'
+            ? (pub.shortVenueZh || pub.shortVenue)
+            : pub.shortVenue;
+        const badge = currentLang === 'zh' ? (pub.badgeZh || pub.badge) : pub.badge;
         const description = currentLang === 'zh'
             ? (pub.descriptionZh || pub.description)
             : pub.description;
@@ -173,11 +177,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="publication-title">${pub.title}</div>
                     <div class="publication-authors">${pub.authors}</div>
                     <div class="publication-meta">
-                        <span class="publication-venue${pub.highlighted ? ' highlighted' : ''}">${pub.shortVenue || pub.venue + ', ' + pub.year}</span>
+                        <span class="publication-venue${pub.highlighted ? ' highlighted' : ''}">${shortVenue || pub.venue + ', ' + pub.year}</span>
                         ${links}
                         ${topicTags}
                     </div>
-                    ${pub.badge ? `<span class="pub-badge">${pub.badge}</span>` : ''}
+                    ${badge ? `<span class="pub-badge">${badge}</span>` : ''}
                     ${description ? `<div class="publication-desc">${description}</div>` : ''}
                 </div>
             </article>
